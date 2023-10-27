@@ -15,3 +15,13 @@ body  {
   align-items: center;
   background-color: #2e2e44;
 }
+
+.digital-clock {
+  position: relative;
+  color: #fff;
+  background-color: #2d2f41;
+  width: 425px;
+  padding: 20px 45px;
+  box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+  border-radius: 10px;  
+}
