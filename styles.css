@@ -23,5 +23,28 @@ body  {
   width: 425px;
   padding: 20px 45px;
   box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
-  border-radius: 10px;  
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.time {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.hour, .time-seperator, .minutes  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 0 10px;
+  line-height: 125px;
 }
