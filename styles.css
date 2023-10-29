@@ -48,3 +48,20 @@ body  {
   padding: 0 10px;
   line-height: 125px;
 }
+
+.hour, .minutes { 
+  font-size: 6.5em;
+  width: 125px;
+}
+
+.time-seperator {
+  font-size: 5em;
+  color: #929292;
+}
+
+.hour {
+  background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+}
