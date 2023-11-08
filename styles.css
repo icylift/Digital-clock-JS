@@ -65,3 +65,37 @@ body  {
   -webkit-background-clip: text;
   
 }
+
+.minutes  {
+  background: -webkit-linear-gradient(90deg, #ff5e9a, #ffb960);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; 
+}
+
+.right-side {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.period, .seconds {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.period {
+  transform: translate(-20px);
+  background: -webkit-linear-gradient(90deg, #f7b63f, #faf879);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; 
+
+}
+.seconds {
+  transform: translate(16px);
+  background: -webkit-linear-gradient(90deg, #ff5e9a, #ffb960);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; 
+}
