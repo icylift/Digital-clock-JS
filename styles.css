@@ -27,6 +27,7 @@ body  {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
 }
 
@@ -40,7 +41,7 @@ body  {
 
 }
 
-.hour, .time-seperator, .minutes  {
+.hours, .time-seperator, .minutes  {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +50,7 @@ body  {
   line-height: 125px;
 }
 
-.hour, .minutes { 
+.hours, .minutes { 
   font-size: 6.5em;
   width: 125px;
 }
@@ -59,7 +60,7 @@ body  {
   color: #929292;
 }
 
-.hour {
+.hours {
   background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -98,4 +99,5 @@ body  {
   background: -webkit-linear-gradient(90deg, #24ff6d, #2f93f1);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; 
+
 }
