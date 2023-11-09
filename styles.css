@@ -114,3 +114,7 @@ body  {
   -webkit-background-clip: text; 
 
 }
+
+.day-name, .day-number  {
+  margin-left: 8px;
+}
