@@ -82,13 +82,13 @@ body  {
   margin-left: 10px;
 }
 
-.period, .seconds {
+.am-pm, .seconds {
   font-size: 1.2em;
   font-weight: 500;
 }
 
-.period {
-  transform: translate(-20px);
+.am-pm  {
+  transform: translate(16px);
   background: -webkit-linear-gradient(90deg, #f7b63f, #faf879);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text; 
@@ -117,4 +117,8 @@ body  {
 
 .day-name, .day-number, .year  {
   margin-left: 8px;
+}
+
+.day-name {
+  margin-right: 8px;
 }
