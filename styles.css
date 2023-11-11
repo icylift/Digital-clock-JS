@@ -115,6 +115,6 @@ body  {
 
 }
 
-.day-name, .day-number  {
+.day-name, .day-number, .year  {
   margin-left: 8px;
 }
