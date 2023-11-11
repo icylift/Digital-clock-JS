@@ -11,3 +11,5 @@ function clock() {
   document.querySelector(".seconds").innerHTML = seconds;
   document.querySelector(".am-pm").innerHTML = period;
 }
+
+var updateClock = setInterval(clock, 1000);
