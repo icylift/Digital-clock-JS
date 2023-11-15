@@ -65,7 +65,7 @@ const monthName = today.toLocaleString("default", { month: "short" });
 document.querySelector(".month-name").innerHTML = monthName;
 document.querySelector(".day-name").innerHTML = dayName;
 document.querySelector(".day-number").innerHTML = dayNumber;
-document.querySelector(".year").innerHTML = dayYear;
+//document.querySelector(".year").innerHTML = dayYear;
 
 // dot menu toggle -----------------------------------------------------------------------------
 const dotMenuBtn = document.querySelector(".dot-menu-btn");
@@ -73,4 +73,10 @@ const dotMenu = document.querySelector(".dot-menu");
 
 dotMenuBtn.addEventListener("click", () => {
   dotMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+  if (e.target.id !== "active-menu") {
+    dotMenu.classList.remove("active");
+  }
 });
