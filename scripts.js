@@ -1,9 +1,17 @@
-// Switch clock format
+// Switch clock format -----------------------------------------------------------------------------
 
 const formatSwitchBtn = document.querySelector(".format-switch-btn");
 
 formatSwitchBtn.addEventListener("click", () => {
   formatSwitchBtn.classList.toggle("active");
+
+  var formatValue = formatSwitchBtn.getAttribute("data-format");
+
+  if (formatValue === "12") {
+    formatSwitchBtn.setAttribute("data-format", "24");
+  } else {
+    formatSwitchBtn.setAttribute("data-format", "12");
+  }
 });
 
 function clock() {
@@ -14,16 +22,19 @@ function clock() {
   var seconds = today.getSeconds();
   let period = "AM";
 
-  // Set AM/PM
+  // Set AM/PM -----------------------------------------------------------------------------
   if (hours >= 12) {
     period = "PM";
   }
 
-  // Set 12 hour clock format
+  // Set 12 hour clock format -----------------------------------------------------------------------------
+  var formateValue = formatSwitchBtn.getAttribute("data-format");
 
-  hours = hours > 12 ? hours % 12 : hours;
+  if (formateValue === "12") {
+    hours = hours > 12 ? hours % 12 : hours;
+  }
 
-  // Add 0 for values lower then 10
+  // Add 0 for values lower then 10 -----------------------------------------------------------------------------
 
   if (hours < 10) {
     hours = "0" + hours;
@@ -55,3 +66,11 @@ document.querySelector(".month-name").innerHTML = monthName;
 document.querySelector(".day-name").innerHTML = dayName;
 document.querySelector(".day-number").innerHTML = dayNumber;
 document.querySelector(".year").innerHTML = dayYear;
+
+// dot menu toggle -----------------------------------------------------------------------------
+const dotMenuBtn = document.querySelector(".dot-menu-btn");
+const dotMenu = document.querySelector(".dot-menu");
+
+dotMenuBtn.addEventListener("click", () => {
+  dotMenu.classList.toggle("active");
+});

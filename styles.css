@@ -136,11 +136,22 @@ body  {
 
 .dot-menu{
   z-index: 999;
+  /*position: absolute;
+  top: 7px;
+  right: 5px;*/
   list-style: none;
   background: #353e54;
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3 ease;
+}
+
+.dot-menu.active  {
+  visibility: visible;
+  opacity: 1;
 }
 
 .menu-item  {
