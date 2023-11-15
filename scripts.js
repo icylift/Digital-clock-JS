@@ -1,3 +1,11 @@
+// Switch clock format
+
+const formatSwitchBtn = document.querySelector(".format-switch-btn");
+
+formatSwitchBtn.addEventListener("click", () => {
+  formatSwitchBtn.classList.toggle("active");
+});
+
 function clock() {
   var today = new Date();
 
